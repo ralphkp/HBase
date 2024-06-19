@@ -1,0 +1,16 @@
+  993  spark-submit --class BigData.tpHBase.HbaseSparkProcess --master yarn --deploy-mode client /root/processing-1.jar\n
+  994  docker cp target/processing-1.jar hadoop-master:/root/
+  995  spark-submit --class BigData.tpHBase.HbaseSparkProcess --master yarn --deploy-mode client /root/processing-1.jar\n
+  996  docker cp target/processing-1.jar hadoop-master:/root/
+  997  docker cp target/processing-1.jar hadoop-master:/root/
+  998  spark-submit --class BigData.tpHBase.HbaseSparkProcess --master yarn --deploy-mode client /root/processing-1.jar\n
+  999  docker run -it --rm spark:python3 /opt/spark/bin/pyspark
+ 1000  docker exec -it hadoop-master bash
+ 1001  docker start hadoop-master hadoop-slave1 hadoop-slave2
+ 1002  docker exec -it hadoop-master bash
+ 1003  exit()\n\n\n
+ 1004  zkServer.sh star
+ 1005  docker exec -it hadoop-master bash
+ 1006  exit()\n\n
+ 1007  docker start hadoop-master hadoop-slave1 hadoop-slave2
+ 1008  docker exec -it hadoop-master bash
